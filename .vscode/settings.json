@@ -1,0 +1,11 @@
+{
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "explorer.fileNesting.patterns": {
+    "+*.svelte": "+${capture}.js, +${capture}.server.js, +${capture}.ts, +${capture}.server.ts",
+    "tsconfig.json": "jsconfig.json",
+    "svelte.config.js": "vite.config.ts",
+    "app.html": "app.css, app.d.ts, error.html",
+    "package.json": "package-lock.json, .npmrc, .editorconfig, .eslintrc.cjs, .gitignore, .eslintignore, .prettierignore, .prettierrc, yarn.lock, pnpm-lock.yaml"
+  }
+}
