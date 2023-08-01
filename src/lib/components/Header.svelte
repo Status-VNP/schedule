@@ -4,7 +4,7 @@
 
 <header class="navbar navbar-expand navbar-dark bg-dark">
   <div class="container">
-    <a class="navbar-brand" href="/">Schedule genarator</a>
+    <a class="navbar-brand" href="{base}/">Schedule genarator</a>
     <button
       class="navbar-toggler"
       type="button"
