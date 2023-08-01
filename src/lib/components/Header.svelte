@@ -1,3 +1,7 @@
+<script lang="ts">
+  import { base } from "$app/paths";
+</script>
+
 <header class="navbar navbar-expand navbar-dark bg-dark">
   <div class="container">
     <a class="navbar-brand" href="/">Schedule genarator</a>
@@ -14,10 +18,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="/">Home</a>
+          <a class="nav-link" aria-current="page" href="{base}/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/settings">Settings</a>
+          <a class="nav-link" href="{base}/settings">Settings</a>
         </li>
       </ul>
     </div>
