@@ -7,7 +7,7 @@
     carName = carName.toUpperCase().trim();
     if (!carName) return;
     carsList.update(cars => {
-      if ($maxRowsCount + 1 > cars.length) {
+      if ($maxRowsCount < cars.length + 1) {
         $maxRowsCount++;
       }
       return [...cars, carName];

@@ -29,13 +29,22 @@
     // Draw the table border
     pdf.rect(padding, padding, colCount * cellWidth, rowCount * cellHeight);
 
-    // Draw the table grid lines
     for (let i = 2; i < colCount; i++) {
+      if (i == 2) {
+        pdf.setDrawColor(0, 0, 0);
+      } else {
+        pdf.setDrawColor(211, 211, 211);
+      }
       const x = padding + i * cellWidth;
-      pdf.line(x, padding, x, padding + rowCount * cellHeight, "F");
+      pdf.line(x, padding, x, padding + rowCount * cellHeight);
     }
 
     for (let i = 1; i < rowCount; i++) {
+      if (i == 1) {
+        pdf.setDrawColor(0, 0, 0);
+      } else {
+        pdf.setDrawColor(211, 211, 211);
+      }
       const y = padding + i * cellHeight;
       pdf.line(padding, y, padding + colCount * cellWidth, y);
     }
